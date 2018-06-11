@@ -8,6 +8,10 @@ body{
   background-color: #ffffff;
 }
 
+button{
+  outline: none;
+  border: none;
+}
 #cardOrder{
   border: 1px solid rgb(237, 128, 64);;
   border-radius: 17px;
@@ -135,13 +139,13 @@ body{
   background-color: #f2f4f8;
 }
 .doRequest{
-  background: rgba(145,232,66,1);
-  background: -moz-linear-gradient(left, rgba(145,232,66,1) 72%, rgba(148,233,67,1) 73%, rgba(210,255,82,1) 95%, rgba(210,255,82,1) 99%);
-  background: -webkit-linear-gradient(left, rgba(145,232,66,1) 72%, rgba(148,233,67,1) 73%, rgba(210,255,82,1) 95%, rgba(210,255,82,1) 99%);
-  background: -o-linear-gradient(left, rgba(145,232,66,1) 72%, rgba(148,233,67,1) 73%, rgba(210,255,82,1) 95%, rgba(210,255,82,1) 99%);
-  background: -ms-linear-gradient(left, rgba(145,232,66,1) 72%, rgba(148,233,67,1) 73%, rgba(210,255,82,1) 95%, rgba(210,255,82,1) 99%);
-  background: linear-gradient(to right, rgba(145,232,66,1) 72%, rgba(148,233,67,1) 73%, rgba(210,255,82,1) 95%, rgba(210,255,82,1) 99%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91e842', endColorstr='#d2ff52', GradientType=1 );
+  background: -moz-linear-gradient(45deg, rgba(59,166,51,1) 31%, rgba(86,203,25,1) 85%); /* ff3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(31%, rgba(59,166,51,1)), color-stop(85%, rgba(86,203,25,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(45deg, rgba(59,166,51,1) 31%, rgba(86,203,25,1) 85%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(45deg, rgba(59,166,51,1) 31%, rgba(86,203,25,1) 85%); /* opera 11.10+ */
+background: -ms-linear-gradient(45deg, rgba(59,166,51,1) 31%, rgba(86,203,25,1) 85%); /* ie10+ */
+background: linear-gradient(45deg, rgba(59,166,51,1) 31%, rgba(86,203,25,1) 85%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56cb19', endColorstr='#3BA633',GradientType=1 ); /* ie6-9 */
 
   border-radius: 34px;
   padding: 12px 21px;
@@ -192,14 +196,21 @@ body{
 
 #updateButton{
   border-radius: 18px;
-  padding-top: 12px;
-  padding-bottom: 10px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   padding-left: 15px;
   padding-right: 16px;
   position: relative;
   left: -34px;
   outline: none;
-  background: lightgreen;
+   background: -moz-linear-gradient(45deg, rgba(59,166,51,1) 31%, rgba(86,203,25,1) 85%); /* ff3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(31%, rgba(59,166,51,1)), color-stop(85%, rgba(86,203,25,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(45deg, rgba(59,166,51,1) 31%, rgba(86,203,25,1) 85%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(45deg, rgba(59,166,51,1) 31%, rgba(86,203,25,1) 85%); /* opera 11.10+ */
+background: -ms-linear-gradient(45deg, rgba(59,166,51,1) 31%, rgba(86,203,25,1) 85%); /* ie10+ */
+background: linear-gradient(45deg, rgba(59,166,51,1) 31%, rgba(86,203,25,1) 85%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56cb19', endColorstr='#3BA633',GradientType=1 ); /* ie6-9 */
+
 }
 
 /*bazarStore*/
@@ -383,4 +394,22 @@ hr.light-100{
   .news{
     width: 70%;
   }
+}
+
+@media (max-width: 576px) {
+  .newsBody{
+    width: 70vw;
+  }
+  .newsBody img{
+    width: 65% !important;
+  }
+
+  .fillials div{
+    width: 85px;
+  }
+
+  .textsTop , .textsBottom{
+  margin-left: 6rem;
+
+}
 }
