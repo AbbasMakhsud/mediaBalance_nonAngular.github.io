@@ -394,6 +394,15 @@ hr.light-100{
   .news{
     width: 70%;
   }
+  .textsTop, .textsBottom {
+    margin-left: 0rem;
+}
+
+
+
+/*.textsTop{
+  margin-left: 12rem !important;
+}*/
 }
 
 @media (max-width: 576px) {
@@ -409,7 +418,36 @@ hr.light-100{
   }
 
   .textsTop , .textsBottom{
-  margin-left: 6rem;
+  margin-left: 6rem !important;
 
 }
+
+.titleText{
+    left: 5rem;
+    width: 80vw;
+}
+
+.cardReceiveTerms{
+  background-position-x:right;
+  color: #ffffff;
+}
+
+.topOne, .bottomOne{  
+      margin-left: 0px !important;
+    width: 29rem !important;
+}
+
+
+}
+
+@media (max-width: 478px) {
+  .titleText{
+  top: -11px;
+  left: 0;
+}
+
+.newsBody{
+      min-width: 63vw;
+}
+
 }
